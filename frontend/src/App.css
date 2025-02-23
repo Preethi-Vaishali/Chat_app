@@ -1,0 +1,30 @@
+.chat-window {
+  max-height: 300px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-message {
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 5px;
+  width: fit-content;
+  max-width: 70%;
+}
+
+.sent {
+  background-color: #007bff;
+  color: white;
+  margin-left: auto;
+  text-align: right;
+  border-radius: 10px 10px 0 10px;
+}
+
+.received {
+  background-color: #f1f1f1;
+  color: black;
+  margin-right: auto;
+  text-align: left;
+  border-radius: 10px 10px 10px 0;
+}
