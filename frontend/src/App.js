@@ -14,13 +14,13 @@ function App() {
 
     // Function to load old messages when button is clicked
     const loadOldMessages = async () => {
-        const response = await fetch('http://localhost:3001/messages?loadOld=true');
+        const response = await fetch('https://chat-app-7gsp.onrender.com/messages?loadOld=true');
         const data = await response.json();
         setMessages(data);
     };
 
     const sendMessage = async (text) => {
-        await fetch('http://localhost:3001/messages', {
+        await fetch('https://chat-app-7gsp.onrender.com/messages', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ text, sender: currentUser }),
